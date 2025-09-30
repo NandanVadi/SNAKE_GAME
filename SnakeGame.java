@@ -59,6 +59,7 @@ public class SnakeGame extends Frame {
 
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
+                System.exit(0);
                 if (gameTimer != null) gameTimer.cancel();
                 dispose();
             }
